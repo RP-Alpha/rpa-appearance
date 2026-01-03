@@ -1,20 +1,52 @@
 # rpa-appearance
 
-A bridge resource for integrating skin/appearance systems into RP-Alpha.
+<div align="center">
 
-## Features
-- **Provider Agnostic**: Supports `illenium-appearance`, `fivem-appearance`, and `qb-clothing`.
-- **Target Integration**: Adds clothing store interactions via `rpa-lib`.
+![GitHub Release](https://img.shields.io/github/v/release/RP-Alpha/rpa-appearance?style=for-the-badge&logo=github&color=blue)
+![GitHub commits](https://img.shields.io/github/commits-since/RP-Alpha/rpa-appearance/latest?style=for-the-badge&logo=git&color=green)
+![License](https://img.shields.io/github/license/RP-Alpha/rpa-appearance?style=for-the-badge&color=orange)
+![Downloads](https://img.shields.io/github/downloads/RP-Alpha/rpa-appearance/total?style=for-the-badge&logo=github&color=purple)
 
-## Installation
-1. Ensure an appearance resource is installed (e.g. `illenium-appearance`).
-2. Add `ensure rpa-appearance` to your `server.cfg`.
+**Appearance System Bridge**
 
-## Configuration
-Set `Config.Provider` in `config.lua` to match your installed resource.
+</div>
 
-## Credits
-- RP-Alpha Development Team
+---
 
-## License
-MIT
+## ✨ Features
+
+- 🔄 **Provider Agnostic** - Works with illenium-appearance, fivem-appearance, qb-clothing
+- 👔 **Target Integration** - Clothing store interactions via rpa-lib
+- 💾 **Save/Load** - Automatic skin persistence
+
+---
+
+## 📥 Installation
+
+1. Download the [latest release](https://github.com/RP-Alpha/rpa-appearance/releases/latest)
+2. Ensure you have an appearance resource installed
+3. Extract to your `resources` folder
+4. Add to `server.cfg`:
+   ```cfg
+   ensure rpa-appearance
+   ```
+
+---
+
+## ⚙️ Configuration
+
+Set your appearance provider in `config.lua`:
+
+```lua
+Config.Provider = 'illenium-appearance' -- or 'fivem-appearance', 'qb-clothing'
+```
+
+---
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+<div align="center">
+  <sub>Built with ❤️ by <a href="https://github.com/RP-Alpha">RP-Alpha</a></sub>
+</div>
