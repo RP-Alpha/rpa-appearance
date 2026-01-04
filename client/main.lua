@@ -28,14 +28,15 @@ local function OpenMenu(isPed)
     end
 end
 
+-- Request skin check from server
 RegisterNetEvent('rpa-appearance:client:checkSkin', function()
-    -- This event is triggered by rpa-spawn after spawning
-    -- Check if player has skin (Server callback ideal, but for now just open menu if new)
-    -- Simplified: Always assume existing skin loaded by framework spawn, OR open menu if specific flag
-    
-    -- Mock:
-    local isNew = false -- Replace with server check
+    TriggerServerEvent('rpa-appearance:server:checkNewPlayer')
+end)
+
+-- Server response for new player check
+RegisterNetEvent('rpa-appearance:client:openForNewPlayer', function(isNew)
     if isNew then
+        exports['rpa-lib']:Notify("Create your character appearance", "info")
         OpenMenu(true)
     end
 end)
